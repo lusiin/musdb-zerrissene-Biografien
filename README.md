@@ -1,0 +1,1 @@
+In diesem Projekt sind zwei Programme. API-Anwendung-Python sammelt Daten von der öffentlichen API von museum-digital, strukturiert und sortiert sie. JS Visualisierung ist eine Webseite, welche die Daten mittels p5.JS visualisiert.
