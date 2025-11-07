@@ -1,0 +1,14 @@
+#slider{
+  height: 10px;
+  width: 150px;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  margin: 0 10px 0 20px;
+}
+#slider-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Künstlerisches Leben im Nationalsozialismus</title>
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/slider.css">
+  <link rel="stylesheet" href="/css/dropdown.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+
+  <script type="module" src="/js/main.js"></script>
+</head>
+<body>
+  
+  <div id="sidebar" class="sidebar-body">
+    <div id="sidebar-header">
+    </div>
+    <div id="sidebar-content">
+    </div>
+  </div>
+
+  <div id="sidebar-left" class="sidebar-body">
+    <div id="sidebar-content">
+      <p>
+        Dieses Projekt widmet sich der Frage, wie sich künstlerische Biografien und Ausdrucksformen zwischen 1933 und 1945 veränderten – in einer Zeit politischer Repression, Zensur und Exil.<br>
+Ausgehend von Daten aus der öffentlichen Sammlung von museum-digital habe ich Werke aus den Bereichen Malerei, Zeichnung und Skulptur gesammelt, aufbereitet und visuell erfahrbar gemacht.<br><br>
+Über die API von museum-digital wurden relevante Objekte gefiltert, strukturiert und anschließend mit p5.js zu einer interaktiven Webvisualisierung entwickelt, die individuelle Lebenswege und künstlerische Entwicklungen sichtbar macht. <br>
+Die Anwendung lädt dazu ein, zu erkunden, wie Künstler*innen auf politische Verfolgung reagierten – sei es durch Anpassung, innere Distanz, formale Veränderung oder den Schritt ins Exil.
+<br>
+        <br><a href="">GitHub</a>
+        <br><a href="">Museum-digital</a>
+        <br><a href="">Luisluethi.ch</a>
+
+      </p>
+    </div>
+  </div>
+
+  <div id="head">
+    <div class="head-left">
+    <div class="dropdown">
+      <button id="info-dropbtn" class="dropbtn" title="Mehr Informationen zum Projekt">Info
+      </button>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" type="button" data-dropdown="tag-dropdown">Kunstrichtungen</button>
+      <div id="tag-dropdown" class="dropdown-content"></div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" type="button" data-dropdown="artist-dropdown">Künstler*Innen</button>
+      <div id="artist-dropdown" class="dropdown-content"></div>
+    </div>
+    </div>
+    <div class="head-center">
+      <h1>Zerrissene Biografien</h1>
+    </div>
+    <div class="head-right">
+      <p >Grenzwert:</p>
+    <div id="slider-container">
+    </div>
+    </div>
+  </div>
+  <div id="myContainer"></div>
+  <div id="footer">
+    <div class="head-left">
+    <a href=https://github.com/lusiin/musdb-zerrissene-Biografien>GitHub</a>
+    <a href=https://global.museum-digital.org>musdb</a>
+    </div>
+    <div class="head-right">
+    <a href=https://www.luisluethi.ch>Gestaltung: Luis M. Lüthi</a>
+    </div>
+  </div>
+</body>
+
+</html>

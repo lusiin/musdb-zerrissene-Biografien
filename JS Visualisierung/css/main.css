@@ -1,0 +1,131 @@
+html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+      }
+#head {
+  display: flex;
+  align-items: center;          /* vertikal zentriert */
+  justify-content: space-between; /* linke, mittlere, rechte Gruppe */
+  height: 40px;
+  width: 100%;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+#head h1{
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+/* Linke Gruppe (zwei Dropbuttons) */
+.head-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Abstand zwischen Buttons */
+}
+
+/* Mittlerer Bereich (Titel) */
+.head-center {
+  flex: 1;                       /* nimmt verfügbaren Platz ein */
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Rechter Bereich (z. B. Info-Button) */
+.head-right {
+  display: flex;
+  align-items: center;
+}
+
+.head-right p{
+    font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+
+}
+
+#myContainer {
+  flex: 1 1 0; /* wächst, schrumpft, Basis 0 */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-height: calc(100vh - 60px);
+}
+#myContainer canvas {
+  display: block;        /* verhindert extra whitespace */
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-body {
+  display: none;
+  position: fixed;   /* über anderen Elementen */
+  top: 40px;            /* oben am Viewport */
+  right:0;
+  width: 400px;      /* Breite der Sidebar */
+  height: 100vh;     /* volle Höhe des Viewports */
+  background-color: white;
+  color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1000;     /* über anderen Elementen */
+  pointer-events: auto; /* Maus-Events auf diesem div aktiv */
+  overflow-y: auto;       /* vertikales Scrollen erlauben */
+}
+
+#sidebar-left{
+  left:0;
+  background-color: rgba(255, 255, 255, 1); /* weiß mit 50% Transparenz */
+  color: #000; /* Textfarbe bleibt normal */
+}
+
+.sidebar-body.active{
+  display: block;
+}
+
+#sidebar-content {
+  /*overflow-y: auto;       /* vertikales Scrollen erlauben */
+  overflow-x: hidden;     /* horizontales Scrollen verhindern (optional) */
+  padding: 1rem;          /* bisschen Innenabstand */
+  box-sizing: border-box; /* damit padding nicht die Höhe sprengt */
+}
+ #sidebar-content h1{
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+ }
+#footer{
+  display: flex;
+  align-items: center;          /* vertikal zentriert */
+  justify-content: space-between; /* linke, mittlere, rechte Gruppe */
+  height: 20px;
+  width: 100%;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+
+#footer a {
+  font-family: "Lato", sans-serif;
+  font-weight: 50;
+  font-style: normal;
+  color: black;
+  margin-left: 10px;
+}
+
